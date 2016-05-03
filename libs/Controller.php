@@ -3,6 +3,7 @@ class Controller {
 
 	function __construct() {
 		$this->View = new View();
+		$this->View->Icon=URL.'/publics/images/iranytu.jpg';
 	}
 	
 	public function LoadModel($Name, $Path='models/') {
