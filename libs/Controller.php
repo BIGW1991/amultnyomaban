@@ -3,7 +3,10 @@ class Controller {
 
 	function __construct() {
 		$this->View = new View();
-		$this->View->Icon=URL.'/publics/images/iranytu.jpg';
+		$this->IniManager=new IniManager();
+		$this->data=$this->IniManager->Read_INI_File();
+		$this->View->Icon=URL.$this->data['ShortcutIcon']['File'];
+		$this->View->CoverImage=URL.$this->data['CoverImage']['File'];
 	}
 	
 	public function LoadModel($Name, $Path='models/') {
