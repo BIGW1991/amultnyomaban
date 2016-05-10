@@ -11,6 +11,8 @@
 			<meta name="author" content="Varga Máté (BIGWarriorSoftware) Szoftverfejlesztő és Web Programozó"/>
 			<meta name="keywords" content="Múlt,Múlt Nyomában,Történelmi Weboldal és Fórum"/>
 			<meta name="robots" content="index,follow"/>
+			<meta name="googlebot" content="index,follow"/>
+			<meta name="resource-type" content="document" />
 			<meta name="dc.language" content="hu">
 			<meta name="dc.source" content="http://www.amultnyomaban.hu/">
 			<meta name="dc.title" content="A Múlt Nyomában">
