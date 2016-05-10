@@ -1,5 +1,5 @@
 <?php
-define('URL','http://localhost:8080/amultnyomaban/');
+define('URL','http://localhost/amultnyomaban/');
 define('LIBS','libs/');
 define('DB_TYPE','mysql');
 define('DB_HOST','localhost');
