@@ -4,7 +4,7 @@ class Bootstrap{
 	private $_url=null;
 	private $_controller=null;
 	private $_controllerPath='controllers/';
-	private $_defaultFile='Kezdolap.php';
+	private $_defaultFile='Blog.php';
 	private $_modelPath='models/';
 	private $_errorPath='Hiba.php';
 	
@@ -28,7 +28,7 @@ class Bootstrap{
 	
 	private function LoadDefaultController(){
 		require $this->_controllerPath.$this->_defaultFile;
-		$this->_controller = new Kezdolap();
+		$this->_controller = new Blog();
 		$this->_controller->Index();
 	}
 	

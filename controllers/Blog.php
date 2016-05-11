@@ -1,13 +1,14 @@
 <?php 
-class Forum extends Controller{
+class Blog extends Controller{
     function __construct(){
         parent::__construct();
     }
     
     function Index(){
         $this->_loadJS();
-        $this->View->Title='Fórum';
-        $this->View->Render('Forum');
+        $this->View->Title='Blog';
+        $this->View->Blog=null;
+        $this->View->Render('Blog');
     }
     
     function _loadJS(){
