@@ -13,7 +13,6 @@
 			<title><?php echo $this->Title; ?> - A múlt nyomában</title>
 			<link rel="shortcut icon" href="<?php echo $this->Icon;?>"/>
 			<link rel="stylesheet" href="<?php echo URL; ?>publics/css/global.css"/>
-			<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<meta name="author" content="Varga Máté (BIGWarriorSoftware) Szoftverfejlesztő és Web Programozó"/>
 			<meta name="keywords" content="Múlt,Múlt Nyomában,Történelmi Weboldal és Fórum"/>
@@ -29,8 +28,10 @@
 			<meta property="og:title" content="A Múlt Nyomában">
 			<meta property="og:type" content="document">
 			<meta property="og:url" content="<?php echo URL; ?>">
-			<meta property="og:image" content="<?php echo URL.$this->CoverImage; ?>" />
+			<meta property="og:image" content="<?php echo $this->CoverImage; ?>" />
+			<?php echo $this->PreLoadJs;?>
 		</head>
 		<body class="body">
-		<h1>A Múlt Nyomában</h1>
-		<image src="<?php echo $this->CoverImage; ?>"/>
+			<header class="MainHeader">
+				<h1>A Múlt Nyomában</h1>
+				<image src="<?php echo $this->CoverImage; ?>"/>
